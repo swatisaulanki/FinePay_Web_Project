@@ -122,7 +122,7 @@ body {
 
 .sidebar-brand {
   margin-top: 15px;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
   
 }
@@ -226,6 +226,12 @@ body {
   height: 300px;
 }
 
+.imgs{
+  
+  height: 35px;
+  width: 10vw;
+  align-items: center;
+}
 /* End Main  */
 
 
@@ -267,6 +273,12 @@ body {
   .charts {
     grid-template-columns: 1fr;
     margin-top: 30px;
+  }
+  .imgs{
+  
+    height: 35px;
+    width: 35vw;
+    align-items: center;
   }
 }
 
