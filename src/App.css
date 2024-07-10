@@ -219,19 +219,21 @@ body {
 }
 
 .charts {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  margin-top: 60px;
-  height: 300px;
-}
+  display: flex;
+   justify-content: center;
+   align-items: center;
+  height: 38vh;
+ margin-top: 55px;
 
+}
 .imgs{
   
   height: 35px;
   width: 10vw;
   align-items: center;
 }
+
+
 /* End Main  */
 
 
@@ -270,10 +272,15 @@ body {
   width:60vw;
 
 }
-  .charts {
-    grid-template-columns: 1fr;
-    margin-top: 30px;
-  }
+.charts {
+  display: flex;
+   justify-content: center;
+   align-items: center;
+  height: 38vh;
+ margin-top: 75px;
+ width: 80vw;
+
+}
   .imgs{
   
     height: 35px;
