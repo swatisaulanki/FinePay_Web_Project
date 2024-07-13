@@ -19,7 +19,6 @@ const Table = () => {
       dateTime: "2024-07-13 12:00",
       uniqueId: "UID123",
       paymentType: "PhonePe",
-      rm: "Branch A",
       userType: "Employee",
     },
     // Add more entries as needed
@@ -44,7 +43,6 @@ const Table = () => {
             <th>Date & Time</th>
             <th>Unique ID</th>
             <th>Payment Type</th>
-            <th>RM</th>
             <th>User Type</th>
           </tr>
         </thead>
@@ -65,7 +63,6 @@ const Table = () => {
               <td>{item.dateTime}</td>
               <td>{item.uniqueId}</td>
               <td>{item.paymentType}</td>
-              <td>{item.rm}</td>
               <td>{item.userType}</td>
             </tr>
           ))}

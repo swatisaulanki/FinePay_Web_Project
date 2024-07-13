@@ -1,5 +1,4 @@
 import React from 'react'
-import "./FineX.css"
 const FineX = () => {
   return (
     <div className='FineHead'>

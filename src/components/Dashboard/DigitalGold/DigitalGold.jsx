@@ -9,7 +9,6 @@ import DigitalByCharts from './DigitalByCharts';
 import DigitalGoldSecondC from './DigitalGoldSecondC';
 import DigitalGoldThird from './DigitalGoldThird';
 import Table from './Table';
-import TableTwo from './TableTwo';
 
 const DigitalGold = () => {
   const data = [
@@ -99,7 +98,6 @@ const DigitalGold = () => {
 <DigitalGoldSecondC/>
 <DigitalGoldThird/>
 <Table/>
-<TableTwo/>
     </main>
    
   )

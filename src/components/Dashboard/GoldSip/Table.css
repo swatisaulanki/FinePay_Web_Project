@@ -9,21 +9,21 @@
   }
   
   th, td {
-    border: 1px solid #dcbbbb;
+    border: 1px solid #1a1919;
     padding: 8px;
   }
   
   th {
-    background-color: #192a46;
+    background-color:#192a46;
     text-align: left;
   }
   
   tr:nth-child(even) {
-    background-color: #434851;
+    background-color: #98bce5;
   }
   
   tr:hover {
-    background-color: #316a98;
+    background-color: #ddd;
   }
   
   th, td {

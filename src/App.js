@@ -4,14 +4,14 @@ import './App.css';
 import Header from './pages/Header';
 import Sidebar from './pages/Sidebar';
 import Home from './pages/Home';
-import ReportSummary from './components/Dashboard/ReportSummary';
-import GoldSip from './components/Dashboard/GoldSip';
-import Merchant from './components/Dashboard/Merchant';
-import GoldPro from './components/Dashboard/GoldPro';
-import FineX from './components/Dashboard/FineX';
-import FinePlus from './components/Dashboard/FinePlus';
-import GoldPlus from './components/Dashboard/GoldPlus';
-import DigitalGold from './components/Dashboard/DigitalGold';
+
+import DigitalGold from './components/Dashboard/DigitalGold/DigitalGold';
+import GoldSip from './components/Dashboard/GoldSip/GoldSip';
+import Merchant from './components/Dashboard/Merchant/Merchant';
+import GoldPro from './components/Dashboard/GoldPro/GoldPro';
+import FineX from './components/Dashboard/Finex/FineX';
+import FinePlus from './components/Dashboard/FinePlus/FinePlus';
+import GoldPlus from './components/Dashboard/GoldPuls/GoldPlus';
 
 function App() {
   const [openSidebarToggle, setOpenSidebarToggle] = useState(false);

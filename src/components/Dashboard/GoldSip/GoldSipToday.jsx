@@ -5,7 +5,7 @@ import
  import 
  { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, LineChart, Line } 
  from 'recharts';
-import GoldSipByCharts from './GoldSipByCharts';
+import GoldSipTodayByCharts from './GoldSipTodayByCharts';
 
 
   const data = [
@@ -52,17 +52,17 @@ import GoldSipByCharts from './GoldSipByCharts';
       amt: 2100,
     },
   ];
-const GoldSip = () => {
+const GoldSipToday = () => {
   return (
     <main className='main-container'>
     <div className='main-title'>
-        <h3>DASHBOARD</h3>
+        <h3>Today</h3>
     </div>
 
     <div className='main-cards'>
         <div className='card'>
             <div className='card-inner'>
-                <h3>Monthly Investment Basic Graph </h3>
+                <h3>Total Investment </h3>
                 <BsFillArchiveFill className='card_icon'/>
             </div>
             <h1>300</h1>
@@ -89,11 +89,9 @@ const GoldSip = () => {
             <h1>42</h1>
         </div>
     </div>
-
-<GoldSipByCharts/>
-
+    <GoldSipTodayByCharts/>
 </main>
   )
 }
 
-export default GoldSip
+export default GoldSipToday
