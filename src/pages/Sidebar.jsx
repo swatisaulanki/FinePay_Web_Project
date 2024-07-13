@@ -9,6 +9,7 @@ import {
   BsMenuButtonWideFill,
   BsFillGearFill,
 } from "react-icons/bs";
+import {Link} from "react-router-dom";
 
 function Sidebar({ openSidebarToggle, OpenSidebar }) {
   const [activeDropdown, setActiveDropdown] = useState(null);
@@ -34,18 +35,18 @@ function Sidebar({ openSidebarToggle, OpenSidebar }) {
             className="sidebar-item"
             onClick={() => toggleDropdown("dashboard")}
           >
-            <a href="#dashboard">
+            <Link to="/">
               <BsGrid1X2Fill className="icon" /> Dashboard
-            </a>
+            </Link>
             {activeDropdown === "dashboard" && (
               <div className="dropdown">
-                <a href="#dashboard-link1">Digital Gold</a>
-                <a href="#dashboard-link2">Gold SIP</a>
-                <a href="#dashboard-link3">Merchant </a>
-                <a href="#dashboard-link3">GoldPro </a>
-                <a href="#dashboard-link3">Fine X </a>
-                <a href="#dashboard-link3">Fine Plus </a>
-                <a href="#dashboard-link3">Gold Plus</a>
+                <Link to="/digitalGold">Digital Gold</Link>
+                <Link to="/goldsip">Gold SIP</Link>
+                <Link to="/merchant">Merchant </Link>
+                <Link to="/goldPro"> GoldPro </Link>
+                <Link to="/finex">Fine X </Link>
+                <Link to="/fineplus">Fine Plus </Link>
+                <Link to="/goldPlus">Gold Plus</Link>
 
               </div>
             )}
