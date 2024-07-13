@@ -14,12 +14,12 @@ const Table = () => {
       state: "NY",
       productName: "Product 1",
       amount: "100.00",
-      gst: "10.00",
+      gst: "03.00",
       transactionId: "TX123456",
       dateTime: "2024-07-13 12:00",
       uniqueId: "UID123",
-      paymentType: "Credit Card",
-    
+      paymentType: "PhonePe",
+      rm: "Branch A",
       userType: "Employee",
     },
     // Add more entries as needed
@@ -37,14 +37,14 @@ const Table = () => {
             <th>Email</th>
             <th>City</th>
             <th>State</th>
-            <th>Product Name</th>
+            <th>Digital Gold</th>
             <th>Amount</th>
             <th>GST</th>
             <th>Transaction ID</th>
             <th>Date & Time</th>
             <th>Unique ID</th>
             <th>Payment Type</th>
-           
+            <th>RM</th>
             <th>User Type</th>
           </tr>
         </thead>
@@ -65,7 +65,7 @@ const Table = () => {
               <td>{item.dateTime}</td>
               <td>{item.uniqueId}</td>
               <td>{item.paymentType}</td>
-              
+              <td>{item.rm}</td>
               <td>{item.userType}</td>
             </tr>
           ))}

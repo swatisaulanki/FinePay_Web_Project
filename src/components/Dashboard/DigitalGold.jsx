@@ -9,6 +9,7 @@ import DigitalByCharts from './DigitalByCharts';
 import DigitalGoldSecondC from './DigitalGoldSecondC';
 import DigitalGoldThird from './DigitalGoldThird';
 import Table from './Table';
+import TableTwo from './TableTwo';
 
 const DigitalGold = () => {
   const data = [
@@ -59,7 +60,7 @@ const DigitalGold = () => {
     
        <main className='main-container'>
         <div className='main-title'>
-            <h3>DASHBOARD</h3>
+            <h3>Digital Gold</h3>
         </div>
 
         <div className='main-cards'>
@@ -98,6 +99,7 @@ const DigitalGold = () => {
 <DigitalGoldSecondC/>
 <DigitalGoldThird/>
 <Table/>
+<TableTwo/>
     </main>
    
   )
