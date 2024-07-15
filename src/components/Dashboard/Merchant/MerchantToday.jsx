@@ -1,15 +1,12 @@
-import React from 'react';
-
+import React from 'react'
 import 
 { BsFillArchiveFill, BsFillGrid3X3GapFill, BsPeopleFill, BsFillBellFill}
  from 'react-icons/bs'
  import 
  { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, LineChart, Line } 
  from 'recharts';
-import MerchantByCharts from './MerchantByCharts';
-import MerchantMonthly from './MerchantMonthly';
-import MerchantToday from './MerchantToday';
-import TableMerchant from './TableMerchant';
+import MerchantTodayByCharts from './MerchantTodayByCharts';
+
 const data = [
   {
     name: 'Page A',
@@ -54,11 +51,11 @@ const data = [
     amt: 2100,
   },
 ];
-const Merchant = () => {
+const MerchantToday = () => {
   return (
     <main className='main-container'>
     <div className='main-title'>
-        <h3>Merchant</h3>
+        <h3>Today</h3>
     </div>
 
     <div className='main-cards'>
@@ -71,17 +68,17 @@ const Merchant = () => {
         </div>
         <div className='card'>
             <div className='card-inner'>
-                <h3>Total Return</h3>
+                <h3>Total Sell</h3>
                 <BsFillGrid3X3GapFill className='card_icon'/>
             </div>
             <h1>12</h1>
         </div>
         <div className='card'>
             <div className='card-inner'>
-                <h3>Total Return</h3>
-                <BsFillGrid3X3GapFill className='card_icon'/>
+                <h3>Total GST</h3>
+                <BsPeopleFill className='card_icon'/>
             </div>
-            <h1>12</h1>
+            <h1>33</h1>
         </div>
         <div className='card'>
             <div className='card-inner'>
@@ -92,13 +89,9 @@ const Merchant = () => {
         </div>
     </div>
 
-<MerchantByCharts/>
-<MerchantMonthly/>
-<MerchantToday/>
-<TableMerchant/>
+<MerchantTodayByCharts/>
 </main>
-
   )
 }
 
-export default Merchant
+export default MerchantToday

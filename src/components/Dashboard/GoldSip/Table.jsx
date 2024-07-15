@@ -20,6 +20,7 @@ const Table = () => {
       uniqueId: "UID123",
       paymentType: "PhonePe",
       userType: "Employee",
+      substitutionType:"NA",
     },
     // Add more entries as needed
   ];
@@ -44,6 +45,7 @@ const Table = () => {
             <th>Unique ID</th>
             <th>Payment Type</th>
             <th>User Type</th>
+            <th>Substitution Type</th>
           </tr>
         </thead>
         <tbody>
@@ -64,6 +66,8 @@ const Table = () => {
               <td>{item.uniqueId}</td>
               <td>{item.paymentType}</td>
               <td>{item.userType}</td>
+              <td>{item.substitutionType}</td>
+
             </tr>
           ))}
         </tbody>

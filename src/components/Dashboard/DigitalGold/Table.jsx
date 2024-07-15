@@ -44,6 +44,7 @@ const Table = () => {
             <th>Unique ID</th>
             <th>Payment Type</th>
             <th>User Type</th>
+            
           </tr>
         </thead>
         <tbody>
