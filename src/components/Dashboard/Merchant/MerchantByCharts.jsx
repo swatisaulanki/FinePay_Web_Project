@@ -39,7 +39,7 @@ import {
   ];
 const MerchantByCharts = () => {
   return (
-    <div className="charts">
+    <div className="chartsMain">
     <ResponsiveContainer   width="85%" height={350}>
       <BarChart
         width={500}

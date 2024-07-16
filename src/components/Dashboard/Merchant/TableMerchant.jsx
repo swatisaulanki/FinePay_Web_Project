@@ -18,6 +18,7 @@ const TableMerchant = () => {
           uniqueId: "UID123",
           paymentType: "PhonePe",
           userType: "Employee",
+          subscriptionType:"NA",
         },
         // Add more entries as needed
       ];
@@ -41,6 +42,7 @@ const TableMerchant = () => {
           <th>Unique ID</th>
           <th>Payment Type</th>
           <th>User Type</th>
+          <th>Subscription Type</th>
         </tr>
       </thead>
       <tbody>
@@ -61,6 +63,7 @@ const TableMerchant = () => {
             <td>{item.uniqueId}</td>
             <td>{item.paymentType}</td>
             <td>{item.userType}</td>
+            <td>{item.subscriptionType}</td>
           </tr>
         ))}
       </tbody>

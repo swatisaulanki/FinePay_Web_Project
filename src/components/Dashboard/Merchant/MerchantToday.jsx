@@ -6,6 +6,7 @@ import
  { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, LineChart, Line } 
  from 'recharts';
 import MerchantTodayByCharts from './MerchantTodayByCharts';
+import './MerchantStyle.css'
 
 const data = [
   {
@@ -58,32 +59,26 @@ const MerchantToday = () => {
         <h3>Today</h3>
     </div>
 
-    <div className='main-cards'>
-        <div className='card'>
-            <div className='card-inner'>
+    <div className='main-cardsmerch'>
+        <div className='cardsm'>
+            <div className='cardsm-inner'>
                 <h3>Total Investment </h3>
                 <BsFillArchiveFill className='card_icon'/>
             </div>
             <h1>300</h1>
         </div>
-        <div className='card'>
-            <div className='card-inner'>
-                <h3>Total Sell</h3>
+        <div className='cardsm'>
+            <div className='cardsm-inner'>
+                <h3>Total Return</h3>
                 <BsFillGrid3X3GapFill className='card_icon'/>
             </div>
             <h1>12</h1>
         </div>
-        <div className='card'>
-            <div className='card-inner'>
-                <h3>Total GST</h3>
-                <BsPeopleFill className='card_icon'/>
-            </div>
-            <h1>33</h1>
-        </div>
-        <div className='card'>
-            <div className='card-inner'>
+       
+        <div className='cardsm'>
+            <div className='cardsm-inner'>
                 <h3>Total Admin Commission</h3>
-                <BsFillBellFill className='card_icon'/>
+                <BsFillBellFill className='cardsm_icon'/>
             </div>
             <h1>42</h1>
         </div>

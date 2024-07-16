@@ -10,6 +10,7 @@ import MerchantByCharts from './MerchantByCharts';
 import MerchantMonthly from './MerchantMonthly';
 import MerchantToday from './MerchantToday';
 import TableMerchant from './TableMerchant';
+import './MerchantStyle.css'
 const data = [
   {
     name: 'Page A',
@@ -61,32 +62,26 @@ const Merchant = () => {
         <h3>Merchant</h3>
     </div>
 
-    <div className='main-cards'>
-        <div className='card'>
-            <div className='card-inner'>
+    <div className='main-cardsmerch'>
+        <div className='cardsm'>
+            <div className='cardsm-inner'>
                 <h3>Total Investment </h3>
                 <BsFillArchiveFill className='card_icon'/>
             </div>
             <h1>300</h1>
         </div>
-        <div className='card'>
-            <div className='card-inner'>
+        <div className='cardsm'>
+            <div className='cardsm-inner'>
                 <h3>Total Return</h3>
                 <BsFillGrid3X3GapFill className='card_icon'/>
             </div>
             <h1>12</h1>
         </div>
-        <div className='card'>
-            <div className='card-inner'>
-                <h3>Total Return</h3>
-                <BsFillGrid3X3GapFill className='card_icon'/>
-            </div>
-            <h1>12</h1>
-        </div>
-        <div className='card'>
-            <div className='card-inner'>
+       
+        <div className='cardsm'>
+            <div className='cardsm-inner'>
                 <h3>Total Admin Commission</h3>
-                <BsFillBellFill className='card_icon'/>
+                <BsFillBellFill className='cardsm_icon'/>
             </div>
             <h1>42</h1>
         </div>
