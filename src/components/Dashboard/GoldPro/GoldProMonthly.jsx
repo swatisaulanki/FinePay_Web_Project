@@ -4,9 +4,7 @@ import
 { BsFillArchiveFill, BsFillGrid3X3GapFill, BsPeopleFill, BsFillBellFill}
  from 'react-icons/bs'
 import GoldProByCharts from './GoldProByCharts';
-import GoldProMonthly from './GoldProMonthly';
-import GoldProToday from './GoldProToday';
-import TableGoldPro from './TableGoldPro';
+import GoldProMonthlyByCharts from './GoldProMonthlyByCharts';
 
 
 
@@ -54,50 +52,48 @@ const data = [
     amt: 2100,
   },
 ];
-const GoldPro = () => {
+const GoldProMonthly = () => {
   return (
     <main className='main-container'>
     <div className='main-title'>
-        <h3>Gold Pro</h3>
+        <h3>Monthly</h3>
     </div>
 
     <div className='main-cards'>
         <div className='card'>
             <div className='card-inner'>
-                <h3>Total Investment </h3>
+                <h3>Investment </h3>
                 <BsFillArchiveFill className='card_icon'/>
             </div>
             <h1>300</h1>
         </div>
         <div className='card'>
             <div className='card-inner'>
-                <h3>Total Return</h3>
+                <h3>Return</h3>
                 <BsFillGrid3X3GapFill className='card_icon'/>
             </div>
             <h1>12</h1>
         </div>
         <div className='card'>
             <div className='card-inner'>
-                <h3>Total Reinvestment</h3>
+                <h3>Reinvestment</h3>
                 <BsPeopleFill className='card_icon'/>
             </div>
             <h1>33</h1>
         </div>
         <div className='card'>
             <div className='card-inner'>
-                <h3>Total Admin Commission</h3>
+                <h3>Admin Commission</h3>
                 <BsFillBellFill className='card_icon'/>
             </div>
             <h1>42</h1>
         </div>
     </div>
 
-<GoldProByCharts/>
-<GoldProMonthly/>
-<GoldProToday/>
-<TableGoldPro/>
+<GoldProMonthlyByCharts/>
+
 </main>
   )
 }
 
-export default GoldPro
+export default GoldProMonthly
