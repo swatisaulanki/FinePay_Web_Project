@@ -2,10 +2,11 @@ import React from 'react'
 import 
 { BsFillArchiveFill, BsFillGrid3X3GapFill, BsPeopleFill, BsFillBellFill}
  from 'react-icons/bs'
-import FinePlusByCharts from './FinePlusByCharts';
-import FinePlusMonthly from './FinePlusMonthly';
-import FinePlusToday from './FinePlusToday';
-import FinePlusTable from './FinePlusTable';
+ import 
+ { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, LineChart, Line } 
+ from 'recharts';
+import FinePlusMonthlyByCharats from './FinePlusMonthlyByCharats';
+
 
 
   const data = [
@@ -52,11 +53,11 @@ import FinePlusTable from './FinePlusTable';
       amt: 2100,
     },
   ];
-const FinePlus = () => {
+const FinePlusMonthly = () => {
   return (
     <main className='main-container'>
     <div className='main-title'>
-        <h3>Fine Plus</h3>
+        <h3>Monthly</h3>
     </div>
 
     <div className='main-cards'>
@@ -90,12 +91,11 @@ const FinePlus = () => {
         </div>
     </div>
 
-<FinePlusByCharts/>
-<FinePlusMonthly/>
-<FinePlusToday/>
-<FinePlusTable/>
+<FinePlusMonthlyByCharats/>
+
 </main>
+
   )
 }
 
-export default FinePlus
+export default FinePlusMonthly
