@@ -12,6 +12,7 @@ import GoldPro from './components/Dashboard/GoldPro/GoldPro';
 import FineX from './components/Dashboard/Finex/FineX';
 import FinePlus from './components/Dashboard/FinePlus/FinePlus';
 import GoldPlus from './components/Dashboard/GoldPuls/GoldPlus';
+import RolesForm from './components/TeamManagment/RolesForm';
 
 function App() {
   const [openSidebarToggle, setOpenSidebarToggle] = useState(false);
@@ -34,6 +35,7 @@ function App() {
           <Route path="/fineplus" element={<FinePlus/>} />
           <Route path="/goldPlus" element={<GoldPlus/>} />
 
+          <Route path="/rolesform" element={<RolesForm/>} />
 
 
         </Routes>

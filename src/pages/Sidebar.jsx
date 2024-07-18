@@ -62,8 +62,8 @@ function Sidebar({ openSidebarToggle, OpenSidebar }) {
             </a>
             {activeDropdown === "team" && (
               <div className="dropdown">
-                <a href="#team-link1">Roles</a>
-                <a href="#team-link2">Super Admin (Edit)</a>
+              <Link to="/rolesform">Roles</Link>
+              <a href="#team-link2">Super Admin (Edit)</a>
                 <a href="#team-link3">Sub-Admin (View)</a>
               </div>
             )}
