@@ -7,10 +7,7 @@ import
   
  from 'recharts';
 
-import GoldPlusByCharts from './GoldPlusByCharts';
-import GoldPlusMonthly from './GoldPlusMonthly';
-import GoldPlusToday from './GoldPlusToday';
-import GoldPlusTable from './GoldPlusTable';
+import GoldPlusMonthlyByCharts from './GoldPlusMonthlyByCharts';
 
 
  const data = [
@@ -58,11 +55,11 @@ import GoldPlusTable from './GoldPlusTable';
   },
 ];
 
-const GoldPlus = () => {
+const GoldPlusMonthly = () => {
   return (
     <main className='main-container'>
     <div className='main-title'>
-        <h3>Gold Plus</h3>
+        <h3>Monthly</h3>
     </div>
 
     <div className='main-cards'>
@@ -96,12 +93,9 @@ const GoldPlus = () => {
         </div>
     </div>
 
-<GoldPlusByCharts/>
-<GoldPlusMonthly/>
-<GoldPlusToday/>
-<GoldPlusTable/>
+<GoldPlusMonthlyByCharts/>
 </main>
   )
 }
 
-export default GoldPlus
+export default GoldPlusMonthly

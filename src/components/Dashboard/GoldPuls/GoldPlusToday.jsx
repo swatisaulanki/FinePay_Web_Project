@@ -7,10 +7,7 @@ import
   
  from 'recharts';
 
-import GoldPlusByCharts from './GoldPlusByCharts';
-import GoldPlusMonthly from './GoldPlusMonthly';
-import GoldPlusToday from './GoldPlusToday';
-import GoldPlusTable from './GoldPlusTable';
+import GoldPlusTodayByCharts from './GoldPlusTodayByCharts';
 
 
  const data = [
@@ -58,11 +55,11 @@ import GoldPlusTable from './GoldPlusTable';
   },
 ];
 
-const GoldPlus = () => {
+const GoldPlusToday = () => {
   return (
     <main className='main-container'>
     <div className='main-title'>
-        <h3>Gold Plus</h3>
+        <h3>Today</h3>
     </div>
 
     <div className='main-cards'>
@@ -89,19 +86,16 @@ const GoldPlus = () => {
         </div>
         <div className='card'>
             <div className='card-inner'>
-                <h3>Admin Commission</h3>
+                <h3>Upcoming return Data</h3>
                 <BsFillBellFill className='card_icon'/>
             </div>
             <h1>42</h1>
         </div>
     </div>
 
-<GoldPlusByCharts/>
-<GoldPlusMonthly/>
-<GoldPlusToday/>
-<GoldPlusTable/>
+<GoldPlusTodayByCharts/>
 </main>
   )
 }
 
-export default GoldPlus
+export default GoldPlusToday
