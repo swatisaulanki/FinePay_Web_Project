@@ -1,0 +1,32 @@
+/* SuperAdminTable.css */
+.submissions-table {
+    margin: 20px 0;
+  }
+  
+  .submissions-table h2 {
+    margin-bottom: 10px;
+  }
+  
+  .submissions-table table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .submissions-table th, .submissions-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .submissions-table th {
+    background-color: #f2f2f2;
+    text-align: left;
+  }
+  
+  .submissions-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .submissions-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
