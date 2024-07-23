@@ -79,10 +79,10 @@ function Sidebar({ openSidebarToggle, OpenSidebar }) {
             </a>
             {activeDropdown === "user" && (
               <div className="dropdown">
-                <a href="#user-link1">User All Data </a>
-                <a href="#user-link2">User Wallet </a>
-                <a href="#user-link3">User Loan History</a>
-                <a href="#user-link3">User All Activity</a>
+                <a href="/userAllData">User All Data </a>
+                <a href="/userWallet">User Wallet </a>
+                <a href="/userLoanHistory">User Loan History</a>
+                <a href="/userAllActivity">User All Activity</a>
 
               </div>
             )}
@@ -98,7 +98,7 @@ function Sidebar({ openSidebarToggle, OpenSidebar }) {
             </a>
             {activeDropdown === "products" && (
               <div className="dropdown">
-                <a href="#products-link1">All Product investment </a>
+                <a href="/productManageForm">All Product investment </a>
                 <a href="#products-link2">All Product Return </a>
                 <a href="#products-link3">All Product loan </a>
               </div>

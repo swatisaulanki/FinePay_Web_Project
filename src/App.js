@@ -15,6 +15,11 @@ import GoldPlus from './components/Dashboard/GoldPuls/GoldPlus';
 import RolesForm from './components/TeamManagment/RolesForm';
 import SuperAdminTable from './components/TeamManagment/SubAdminTable';
 import SubAdminTable from './components/TeamManagment/SubAdminTable';
+import UserAllData from './components/UserManagement/UserAllData';
+import UserWallet from './components/UserManagement/UserWallet';
+import UserLoanHistory from './components/UserManagement/UserLoanHistory';
+import UserAllActivity from './components/UserManagement/UserAllActivity';
+import ProductsManageForm from './components/ProductsManagement/ProductsManageForm';
 
 function App() {
   const [openSidebarToggle, setOpenSidebarToggle] = useState(false);
@@ -61,6 +66,12 @@ function App() {
           <Route path="/rolesform" element={<RolesForm onAddSubmission={handleAddSubmission} />} />
           <Route path="/superadminTable" element={<SuperAdminTable superAdminSubmissions={superAdminSubmissions} />} />
           <Route path="/subadminTable" element={<SubAdminTable subAdminSubmissions={subAdminSubmissions} />} />
+          <Route path="/userAllData" element={<UserAllData/>} />
+          <Route path="/userWallet" element={<UserWallet/>} />
+          <Route path="/userLoanHistory" element={<UserLoanHistory/>} />
+          <Route path="/userAllActivity" element={<UserAllActivity/>} />
+          <Route path="/productManageForm" element={<ProductsManageForm/>} />
+
 
         </Routes>
       </div>
