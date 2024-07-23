@@ -20,6 +20,9 @@ import UserWallet from './components/UserManagement/UserWallet';
 import UserLoanHistory from './components/UserManagement/UserLoanHistory';
 import UserAllActivity from './components/UserManagement/UserAllActivity';
 import ProductsManageForm from './components/ProductsManagement/ProductsManageForm';
+import AllProductReturn from './components/ProductsManagement/AllProductReturn';
+import AllProductReinvestment from './components/ProductsManagement/AllProductReinvestment';
+import AllProductLoan from './components/ProductsManagement/AllProductLoan';
 
 function App() {
   const [openSidebarToggle, setOpenSidebarToggle] = useState(false);
@@ -71,7 +74,11 @@ function App() {
           <Route path="/userLoanHistory" element={<UserLoanHistory/>} />
           <Route path="/userAllActivity" element={<UserAllActivity/>} />
           <Route path="/productManageForm" element={<ProductsManageForm/>} />
+          <Route path="/allProductReturn" element={<AllProductReturn/>} />
+          <Route path="/allProductReinvestment" element={<AllProductReinvestment/>} />
+          <Route path="/allProductLoan" element={<AllProductLoan/>} />
 
+         
 
         </Routes>
       </div>

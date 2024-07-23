@@ -99,8 +99,9 @@ function Sidebar({ openSidebarToggle, OpenSidebar }) {
             {activeDropdown === "products" && (
               <div className="dropdown">
                 <a href="/productManageForm">All Product investment </a>
-                <a href="#products-link2">All Product Return </a>
-                <a href="#products-link3">All Product loan </a>
+                <a href="/allProductReturn">All Product Return </a>
+                <a href="/allProductReinvestment">All Product Reinvestment </a>
+                <a href="/allProductLoan">All Product loan </a>
               </div>
             )}
           </div>
