@@ -23,6 +23,8 @@ import ProductsManageForm from './components/ProductsManagement/ProductsManageFo
 import AllProductReturn from './components/ProductsManagement/AllProductReturn';
 import AllProductReinvestment from './components/ProductsManagement/AllProductReinvestment';
 import AllProductLoan from './components/ProductsManagement/AllProductLoan';
+import WithdrawalHistory from './components/WithdrawalManag/WithdrawalHistory';
+import UpcomeWithHistory from './components/UpcommingWithHistory/UpcomeWithHistory';
 
 function App() {
   const [openSidebarToggle, setOpenSidebarToggle] = useState(false);
@@ -77,6 +79,8 @@ function App() {
           <Route path="/allProductReturn" element={<AllProductReturn/>} />
           <Route path="/allProductReinvestment" element={<AllProductReinvestment/>} />
           <Route path="/allProductLoan" element={<AllProductLoan/>} />
+          <Route path="/withdrawalHistory" element={<WithdrawalHistory/>} />
+          <Route path="/upcomewithHistory" element={<UpcomeWithHistory/>} />
 
          
 

@@ -1,0 +1,71 @@
+import React from 'react'
+import "./UpcomeWithHistory.css"
+import FinexUpcomeWith from './FinexUpcomeWith';
+import FinePlusWithHistory from './FinePlusWithHistory';
+import GoldPlusWithHistory from '../WithdrawalManag/GoldPlusWithHistory';
+import GoldPlusUpwithHiestory from './GoldPlusUpwithHiestory';
+const UpcomeWithHistory = () => {
+    const data = [
+        {
+          name: "John Doe",
+          dob: "1990-01-01",
+          gender: "Male",
+          mob: "1234567890",
+          email: "john@example.com",
+          city: "New York",
+          state: "NY",
+          productName: "Product 1",
+          amount: "100.00",
+          maturityDate: "24-07-2024",
+          
+       
+        },
+        // Add more entries as needed
+      ];
+  return (
+    <div className="table-container">
+    <h1>Gold Pro</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>DOB</th>
+      <th>Gender</th>
+      <th>Mob</th>
+      <th>Email</th>
+      <th>City</th>
+      <th>State</th>
+      <th>Digital Gold</th>
+      <th>Amount</th>
+      <th>Maturity Date</th>
+     
+     
+    </tr>
+  </thead>
+  <tbody>
+    {data.map((item, index) => (
+      <tr key={index}>
+        <td>{item.name}</td>
+        <td>{item.dob}</td>
+        <td>{item.gender}</td>
+        <td>{item.mob}</td>
+        <td>{item.email}</td>
+        <td>{item.city}</td>
+        <td>{item.state}</td>
+        <td>{item.productName}</td>
+        <td>{item.amount}</td>
+        <td>{item.maturityDate}</td>
+      
+       
+      </tr>
+    ))}
+  </tbody>
+</table>
+<FinexUpcomeWith/>
+<FinePlusWithHistory/>
+<GoldPlusUpwithHiestory/>
+</div>
+  )
+}
+
+export default UpcomeWithHistory

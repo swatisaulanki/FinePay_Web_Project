@@ -117,8 +117,8 @@ function Sidebar({ openSidebarToggle, OpenSidebar }) {
             </a>
             {activeDropdown === "withdrawal" && (
               <div className="dropdown">
-                <a href="#withdrawal-link1">All products withdrawal History</a>
-                <a href="#withdrawal-link2">All products upcoming withdrawal History</a>
+                <a href="/withdrawalHistory">All products withdrawal History</a>
+                <a href="/upcomewithHistory">All products upcoming withdrawal History</a>
               </div>
             )}
           </div>
