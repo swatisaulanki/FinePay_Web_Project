@@ -9,20 +9,30 @@ import {
   BsMenuButtonWideFill,
   BsFillGearFill,
 } from "react-icons/bs";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Sidebar({ openSidebarToggle, OpenSidebar }) {
   const [activeDropdown, setActiveDropdown] = useState(null);
-
+  const [showMenu, setShowMenu] = useState(false);
+  const [upshowmenu, setupshowMenu] = useState(false);
   const toggleDropdown = (dropdownName) => {
     setActiveDropdown((prev) => (prev === dropdownName ? null : dropdownName));
   };
 
+  const toggleMenu = () => {
+    setShowMenu(!showMenu);
+  };
+  const toggleMenus = () => {
+    setupshowMenu(!upshowmenu);
+  };
   return (
-    <aside id="sidebar" className={openSidebarToggle ? "sidebar-responsive" : ""}>
+    <aside
+      id="sidebar"
+      className={openSidebarToggle ? "sidebar-responsive" : ""}
+    >
       <div className="sidebar-title">
         <div className="sidebar-brand">
-          <img src={"./images/wFinePay.png"} className="imgs"/> 
+          <img src={"./images/wFinePay.png"} className="imgs" />
         </div>
         <span className="icon close_icon" onClick={OpenSidebar}>
           X
@@ -47,33 +57,26 @@ function Sidebar({ openSidebarToggle, OpenSidebar }) {
                 <Link to="/finex">Fine X </Link>
                 <Link to="/fineplus">Fine Plus </Link>
                 <Link to="/goldPlus">Gold Plus</Link>
-
               </div>
             )}
           </div>
         </li>
         <li className="sidebar-list-item">
-          <div
-            className="sidebar-item"
-            onClick={() => toggleDropdown("team")}
-          >
+          <div className="sidebar-item" onClick={() => toggleDropdown("team")}>
             <a href="#team">
               <BsFillArchiveFill className="icon" /> Team Management
             </a>
             {activeDropdown === "team" && (
               <div className="dropdown">
-              <Link to="/rolesform">Roles</Link>
-              <Link to="/superadminTable">Super Admin (Edit)</Link>
+                <Link to="/rolesform">Roles</Link>
+                <Link to="/superadminTable">Super Admin (Edit)</Link>
                 <Link to="/subadminTable">Sub-Admin (View)</Link>
               </div>
             )}
           </div>
         </li>
         <li className="sidebar-list-item">
-          <div
-            className="sidebar-item"
-            onClick={() => toggleDropdown("user")}
-          >
+          <div className="sidebar-item" onClick={() => toggleDropdown("user")}>
             <a href="#user">
               <BsFillGrid3X3GapFill className="icon" /> User Management
             </a>
@@ -83,7 +86,6 @@ function Sidebar({ openSidebarToggle, OpenSidebar }) {
                 <a href="/userWallet">User Wallet </a>
                 <a href="/userLoanHistory">User Loan History</a>
                 <a href="/userAllActivity">User All Activity</a>
-
               </div>
             )}
           </div>
@@ -117,8 +119,32 @@ function Sidebar({ openSidebarToggle, OpenSidebar }) {
             </a>
             {activeDropdown === "withdrawal" && (
               <div className="dropdown">
-                <a href="/withdrawalHistory">All products withdrawal History</a>
-                <a href="/upcomewithHistory">All products upcoming withdrawal History</a>
+                <a onClick={toggleMenu} className="dropdown-button">
+                  All Products Withdrawal History
+                </a>
+                {showMenu && (
+                  <div className="dropdown-content">
+                    <a href="/withdrawalHistory">Digital Gold</a>
+                    <a href="/goldSipwithHistory">Gold SIP</a>
+                    <a href="/merchantWithHistory">Merchant Autopay</a>
+                    <a href="/golProwithHistory">Gold Pro</a>
+                    <a href="/finexWithHistory">Fine X</a>
+                    <a href="/goldPlusWithHistory">Gold Plus</a>
+                    <a href="/finePlusWithHistory">Fine Plus</a>
+                  </div>
+                )}
+
+                <a onClick={toggleMenus} className="dropdown-button">
+                  Upcomming Withdrawal History
+                </a>
+                {upshowmenu && (
+                  <div className="dropdown-content">
+                    <a href="/upCommewithHistory">Gold Pro</a>
+                    <a href="/finexUpComewithHistory">Fine X</a>
+                    <a href="/finePlusUpcomeWithHistory">Fine Plus</a>
+                    <a href="/GoldPlusupCommewithHistory">Gold Plus</a>
+                  </div>
+                )}
               </div>
             )}
           </div>
@@ -138,7 +164,6 @@ function Sidebar({ openSidebarToggle, OpenSidebar }) {
                 <a href="#referral-link2">Referral withdrawal User data</a>
                 <a href="#referral-link3">Referral withdrawal Setup User</a>
                 <a href="#referral-link3">MIS Reports</a>
-
               </div>
             )}
           </div>
@@ -153,20 +178,18 @@ function Sidebar({ openSidebarToggle, OpenSidebar }) {
             </a>
             {activeDropdown === "scratchCard" && (
               <div className="dropdown">
-                <a href="#scratchCard-link1">All Products by time scratch card balance</a>
+                <a href="#scratchCard-link1">
+                  All Products by time scratch card balance
+                </a>
                 <a href="#scratchCard-link2">All User joining Balance</a>
                 <a href="#scratchCard-link3">Scratch Card Setup User</a>
                 <a href="#scratchCard-link3">MIS Reports</a>
-
               </div>
             )}
           </div>
         </li>
         <li className="sidebar-list-item">
-          <div
-            className="sidebar-item"
-            onClick={() => toggleDropdown("game")}
-          >
+          <div className="sidebar-item" onClick={() => toggleDropdown("game")}>
             <a href="#game">
               <BsMenuButtonWideFill className="icon" />
               Game Management
@@ -175,19 +198,17 @@ function Sidebar({ openSidebarToggle, OpenSidebar }) {
               <div className="dropdown">
                 <a href="#game-link1">ACTIVE/ INACTIVE USER</a>
                 <a href="#game-link2">WINNER HISTORY USER</a>
-                <a href="#game-link3">WINER REWRAD MONEY SETTLEMENT SETUP USER</a>
+                <a href="#game-link3">
+                  WINER REWRAD MONEY SETTLEMENT SETUP USER
+                </a>
                 <a href="#game-link3">GAME PRICE MONEY SETUP USER</a>
                 <a href="#game-link3">MIS Reports</a>
-
               </div>
             )}
           </div>
         </li>
         <li className="sidebar-list-item">
-          <div
-            className="sidebar-item"
-            onClick={() => toggleDropdown("loan")}
-          >
+          <div className="sidebar-item" onClick={() => toggleDropdown("loan")}>
             <a href="#loan">
               <BsMenuButtonWideFill className="icon" />
               Loan Management
@@ -204,7 +225,6 @@ function Sidebar({ openSidebarToggle, OpenSidebar }) {
                 <a href="#loan-link3">MIS Reports Loan Disbursement </a>
                 <a href="#loan-link3">MIS Repayment Loan Disbursement </a>
                 <a href="#loan-link3">MIS Overdue Loan Disbursement</a>
-
               </div>
             )}
           </div>
@@ -226,7 +246,6 @@ function Sidebar({ openSidebarToggle, OpenSidebar }) {
                 <a href="#branch-link3">MIS Reports AP</a>
                 <a href="#branch-link3">MIS Reports EMP</a>
                 <a href="#branch-link3">MIS Reports Normal User</a>
-
               </div>
             )}
           </div>
@@ -247,16 +266,12 @@ function Sidebar({ openSidebarToggle, OpenSidebar }) {
                 <a href="#support-link3">All User Email Notification</a>
                 <a href="#support-link3">Email Marketing</a>
                 <a href="#support-link3">MIS Reports</a>
-
               </div>
             )}
           </div>
         </li>
         <li className="sidebar-list-item">
-          <div
-            className="sidebar-item"
-            onClick={() => toggleDropdown("blogs")}
-          >
+          <div className="sidebar-item" onClick={() => toggleDropdown("blogs")}>
             <a href="#blogs">
               <BsMenuButtonWideFill className="icon" /> Blogs Management
             </a>
@@ -268,7 +283,6 @@ function Sidebar({ openSidebarToggle, OpenSidebar }) {
                 <a href="#blogs-link3">Website Visit All Page Report</a>
                 <a href="#blogs-link3">Affiliate Partner Programs Login</a>
                 <a href="#blogs-link3">All Social Media Feedback</a>
-
               </div>
             )}
           </div>

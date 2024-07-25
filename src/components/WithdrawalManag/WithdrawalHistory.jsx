@@ -1,11 +1,6 @@
 import React from 'react'
 import "./WithdrawalHistory.css"
-import GoldSipWithHistory from './GoldSipWithHistory';
-import MerchantWithHistory from './MerchantWithHistory';
-import GoldProWithHistory from './GoldProWithHistory';
-import FinexWithHistory from './FinexWithHistory';
-import GoldPlusWithHistory from './GoldPlusWithHistory';
-import FinePlusWithHistory from './FinePlusWithHistory';
+
 const WithdrawalHistory = () => {
     const data = [
         {
@@ -70,12 +65,7 @@ const WithdrawalHistory = () => {
         ))}
       </tbody>
     </table>
-    <GoldSipWithHistory/>
-  <MerchantWithHistory/>
-  <GoldProWithHistory/>
-  <FinexWithHistory/>
-  <GoldPlusWithHistory/>
-  <FinePlusWithHistory/>
+  
   </div>
   
     </>

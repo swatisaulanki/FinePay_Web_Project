@@ -24,7 +24,17 @@ import AllProductReturn from './components/ProductsManagement/AllProductReturn';
 import AllProductReinvestment from './components/ProductsManagement/AllProductReinvestment';
 import AllProductLoan from './components/ProductsManagement/AllProductLoan';
 import WithdrawalHistory from './components/WithdrawalManag/WithdrawalHistory';
+import GoldSipWithHistory from './components/WithdrawalManag/GoldSipWithHistory';
+import MerchantWithHistory from './components/WithdrawalManag/MerchantWithHistory';
+import GoldProWithHistory from './components/WithdrawalManag/GoldProWithHistory';
+import FinexWithHistory from './components/WithdrawalManag/FinexWithHistory';
+import GoldPlusWithHistory from './components/WithdrawalManag/GoldPlusWithHistory';
+import FinePlusWithHistory from './components/WithdrawalManag/FinePlusWithHistory';
 import UpcomeWithHistory from './components/UpcommingWithHistory/UpcomeWithHistory';
+import FinexUpcomeWith from './components/UpcommingWithHistory/FinexUpcomeWith';
+import GoldPlusUpwithHiestory from './components/UpcommingWithHistory/GoldPlusUpwithHiestory';
+import FinePlusUpWithHistory from './components/UpcommingWithHistory/FinePlusUpWithHistory';
+
 
 function App() {
   const [openSidebarToggle, setOpenSidebarToggle] = useState(false);
@@ -80,9 +90,19 @@ function App() {
           <Route path="/allProductReinvestment" element={<AllProductReinvestment/>} />
           <Route path="/allProductLoan" element={<AllProductLoan/>} />
           <Route path="/withdrawalHistory" element={<WithdrawalHistory/>} />
-          <Route path="/upcomewithHistory" element={<UpcomeWithHistory/>} />
+        
+          <Route path="/goldSipwithHistory" element={<GoldSipWithHistory/>} />
+          <Route path="/merchantWithHistory" element={<MerchantWithHistory/>} />
+          <Route path="/golProwithHistory" element={<GoldProWithHistory/>} />
+          <Route path="/finexWithHistory" element={<FinexWithHistory/>} />
+          <Route path="/goldPlusWithHistory" element={<GoldPlusWithHistory/>} />
+          <Route path="/finePlusWithHistory" element={<FinePlusWithHistory/>} />
 
-         
+          <Route path="/upCommewithHistory" element={<UpcomeWithHistory/>} />
+          <Route path="/finexUpComewithHistory" element={<FinexUpcomeWith/>} />
+          <Route path="/finePlusUpcomeWithHistory" element={<FinePlusUpWithHistory/>} />
+          <Route path="/GoldPlusupCommewithHistory" element={<GoldPlusUpwithHiestory/>} />
+
 
         </Routes>
       </div>

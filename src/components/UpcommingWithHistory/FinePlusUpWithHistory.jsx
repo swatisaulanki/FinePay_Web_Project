@@ -1,6 +1,6 @@
 import React from 'react'
 import "./FinePlusWithHistory.css"
-const FinePlusWithHistory = () => {
+const FinePlusUpWithHistory = () => {
     const data = [
         {
           name: "John Doe",
@@ -61,4 +61,4 @@ const FinePlusWithHistory = () => {
   )
 }
 
-export default FinePlusWithHistory
+export default FinePlusUpWithHistory

@@ -1,9 +1,6 @@
 import React from 'react'
 import "./UpcomeWithHistory.css"
-import FinexUpcomeWith from './FinexUpcomeWith';
-import FinePlusWithHistory from './FinePlusWithHistory';
-import GoldPlusWithHistory from '../WithdrawalManag/GoldPlusWithHistory';
-import GoldPlusUpwithHiestory from './GoldPlusUpwithHiestory';
+
 const UpcomeWithHistory = () => {
     const data = [
         {
@@ -61,9 +58,7 @@ const UpcomeWithHistory = () => {
     ))}
   </tbody>
 </table>
-<FinexUpcomeWith/>
-<FinePlusWithHistory/>
-<GoldPlusUpwithHiestory/>
+
 </div>
   )
 }
