@@ -39,6 +39,9 @@ import ReffaralUserBalance from './components/ReffaralManagement/ReffaralUserBal
 import ReffaralMisReports from './components/ReffaralManagement/ReffaralMisReports';
 import ReffaralWithDrawalSetup from './components/ReffaralManagement/ReffaralWithDrawalSetup';
 import MISReports from './components/ScratchCardManage/MISReports';
+import ActiveUser from './components/GameManagement/ActiveUser';
+import WinnerHistroy from './components/GameManagement/WinnerHistroy';
+import GameMISReports from './components/GameManagement/GameMISReports';
 
 
 function App() {
@@ -114,6 +117,10 @@ function App() {
           <Route path="/reffaralMisReports" element={<ReffaralMisReports/>} />
 
           <Route path="/misReports" element={<MISReports/>} />
+
+          <Route path="/activeUser" element={<ActiveUser/>} />
+          <Route path="/winnerHistory" element={<WinnerHistroy/>} />
+          <Route path="/gamemisReports" element={<GameMISReports/>} />
 
         </Routes>
       </div>

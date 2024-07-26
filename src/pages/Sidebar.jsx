@@ -196,13 +196,9 @@ function Sidebar({ openSidebarToggle, OpenSidebar }) {
             </a>
             {activeDropdown === "game" && (
               <div className="dropdown">
-                <a href="#game-link1">ACTIVE/ INACTIVE USER</a>
-                <a href="#game-link2">WINNER HISTORY USER</a>
-                <a href="#game-link3">
-                  WINER REWRAD MONEY SETTLEMENT SETUP USER
-                </a>
-                <a href="#game-link3">GAME PRICE MONEY SETUP USER</a>
-                <a href="#game-link3">MIS Reports</a>
+                <a href="/activeUser">ACTIVE/ INACTIVE USER</a>
+                <a href="/winnerHistory">WINNER HISTORY USER</a>
+                <a href="/gamemisReports">MIS Reports</a>
               </div>
             )}
           </div>
