@@ -178,12 +178,12 @@ function Sidebar({ openSidebarToggle, OpenSidebar }) {
             </a>
             {activeDropdown === "scratchCard" && (
               <div className="dropdown">
-                <a href="#scratchCard-link1">
+                {/* <a href="#scratchCard-link1">
                   All Products by time scratch card balance
                 </a>
                 <a href="#scratchCard-link2">All User joining Balance</a>
-                <a href="#scratchCard-link3">Scratch Card Setup User</a>
-                <a href="#scratchCard-link3">MIS Reports</a>
+                <a href="#scratchCard-link3">Scratch Card Setup User</a> */}
+                <a href="/misReports">MIS Reports</a>
               </div>
             )}
           </div>

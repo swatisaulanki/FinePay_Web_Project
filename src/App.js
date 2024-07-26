@@ -38,6 +38,7 @@ import ReffaralUserData from './components/ReffaralManagement/ReffaralUserData';
 import ReffaralUserBalance from './components/ReffaralManagement/ReffaralUserBalance';
 import ReffaralMisReports from './components/ReffaralManagement/ReffaralMisReports';
 import ReffaralWithDrawalSetup from './components/ReffaralManagement/ReffaralWithDrawalSetup';
+import MISReports from './components/ScratchCardManage/MISReports';
 
 
 function App() {
@@ -112,6 +113,7 @@ function App() {
 
           <Route path="/reffaralMisReports" element={<ReffaralMisReports/>} />
 
+          <Route path="/misReports" element={<MISReports/>} />
 
         </Routes>
       </div>
