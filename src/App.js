@@ -34,6 +34,10 @@ import UpcomeWithHistory from './components/UpcommingWithHistory/UpcomeWithHisto
 import FinexUpcomeWith from './components/UpcommingWithHistory/FinexUpcomeWith';
 import GoldPlusUpwithHiestory from './components/UpcommingWithHistory/GoldPlusUpwithHiestory';
 import FinePlusUpWithHistory from './components/UpcommingWithHistory/FinePlusUpWithHistory';
+import ReffaralUserData from './components/ReffaralManagement/ReffaralUserData';
+import ReffaralUserBalance from './components/ReffaralManagement/ReffaralUserBalance';
+import ReffaralMisReports from './components/ReffaralManagement/ReffaralMisReports';
+import ReffaralWithDrawalSetup from './components/ReffaralManagement/ReffaralWithDrawalSetup';
 
 
 function App() {
@@ -102,6 +106,11 @@ function App() {
           <Route path="/finexUpComewithHistory" element={<FinexUpcomeWith/>} />
           <Route path="/finePlusUpcomeWithHistory" element={<FinePlusUpWithHistory/>} />
           <Route path="/GoldPlusupCommewithHistory" element={<GoldPlusUpwithHiestory/>} />
+          <Route path="/reffaraluserData" element={<ReffaralUserData/>} />
+          <Route path="/reffaralUserBalance" element={<ReffaralUserBalance/>} />
+          <Route path="/reffaralWithDrawalSetup" element={<ReffaralWithDrawalSetup/>} />
+
+          <Route path="/reffaralMisReports" element={<ReffaralMisReports/>} />
 
 
         </Routes>

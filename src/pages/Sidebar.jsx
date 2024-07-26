@@ -160,10 +160,10 @@ function Sidebar({ openSidebarToggle, OpenSidebar }) {
             </a>
             {activeDropdown === "referral" && (
               <div className="dropdown">
-                <a href="#referral-link1">Referral User data</a>
-                <a href="#referral-link2">Referral withdrawal User data</a>
-                <a href="#referral-link3">Referral withdrawal Setup User</a>
-                <a href="#referral-link3">MIS Reports</a>
+                <a href="/reffaraluserData">Referral User data</a>
+                <a href="/reffaralUserBalance">Referral withdrawal User data</a>
+                <a href="/reffaralWithDrawalSetup">Referral withdrawal Setup User</a>
+                <a href="/reffaralMisReports">MIS Reports</a>
               </div>
             )}
           </div>
