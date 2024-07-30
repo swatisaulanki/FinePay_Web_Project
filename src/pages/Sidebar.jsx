@@ -211,16 +211,16 @@ function Sidebar({ openSidebarToggle, OpenSidebar }) {
             </a>
             {activeDropdown === "loan" && (
               <div className="dropdown">
-                <a href="#loan-link1">Total Loan Disbursement</a>
-                <a href="#loan-link2">Loan Disbursement Monthly Basic Graph</a>
-                <a href="#loan-link3">Loan Approved</a>
-                <a href="#loan-link3">Loan Disbursement User</a>
-                <a href="#loan-link3">Repayment Schedule User</a>
-                <a href="#loan-link3">Overdue fine user</a>
-                <a href="#loan-link3">Foreclosure Payment User</a>
-                <a href="#loan-link3">MIS Reports Loan Disbursement </a>
-                <a href="#loan-link3">MIS Repayment Loan Disbursement </a>
-                <a href="#loan-link3">MIS Overdue Loan Disbursement</a>
+                <a href="/totalLoanDis">Total Loan Disbursement</a>
+                <a href="/loanAproved">Loan Approved</a>
+                <a href="/loanDisburse">Loan Disbursement User</a>
+                <a href="/repaymentSched">Repayment Schedule User</a>
+                <a href="/overDueFine">Overdue fine user</a>
+                <a href="/foreclosure">Foreclosure Payment User</a>
+                <a href="/misReports">MIS Reports Loan Disbursement </a>
+                <a href="/misRepaymentLoan">MIS Repayment Loan Disbursement </a>
+
+                <a href="/misOverdueLoanDis">MIS Overdue Loan Disbursement</a>
               </div>
             )}
           </div>

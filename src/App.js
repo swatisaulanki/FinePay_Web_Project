@@ -42,6 +42,15 @@ import MISReports from './components/ScratchCardManage/MISReports';
 import ActiveUser from './components/GameManagement/ActiveUser';
 import WinnerHistroy from './components/GameManagement/WinnerHistroy';
 import GameMISReports from './components/GameManagement/GameMISReports';
+import TotalLoanDisbursement from './components/LoanManagement/TotalLoanDisbursement';
+import LoanAproved from './components/LoanManagement/LoanAproved';
+import LoanDisbursementUser from './components/LoanManagement/LoanDisbursementUser';
+import RepaymentScheduleUser from './components/LoanManagement/RepaymentScheduleUser';
+import OverdueFineUser from './components/LoanManagement/OverdueFineUser';
+import ForeclosurePaymentUser from './components/LoanManagement/ForeclosurePaymentUser';
+import MISReportsLoan from './components/LoanManagement/MISReportsLoan';
+import MisOverdueLoanDisbursement from './components/LoanManagement/MisOverdueLoanDisbursement';
+import MisRepaymentLoanDisb from './components/LoanManagement/MisRepaymentLoanDisb';
 
 
 function App() {
@@ -121,6 +130,18 @@ function App() {
           <Route path="/activeUser" element={<ActiveUser/>} />
           <Route path="/winnerHistory" element={<WinnerHistroy/>} />
           <Route path="/gamemisReports" element={<GameMISReports/>} />
+
+
+          <Route path="/totalLoanDis" element={<TotalLoanDisbursement/>} />
+          <Route path="/loanAproved" element={<LoanAproved/>} />
+          <Route path="/loanDisburse" element={<LoanDisbursementUser/>} />
+          <Route path="/repaymentSched" element={<RepaymentScheduleUser/>} />
+          <Route path="/overDueFine" element={<OverdueFineUser/>} />
+          <Route path="/foreclosure" element={<ForeclosurePaymentUser/>} />
+          <Route path="/misReports" element={<MISReportsLoan/>} />
+          <Route path="/misRepaymentLoan" element={<MisRepaymentLoanDisb/>} />
+
+          <Route path="/misOverdueLoanDis" element={<MisOverdueLoanDisbursement/>} />
 
         </Routes>
       </div>
