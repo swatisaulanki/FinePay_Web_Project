@@ -10,15 +10,25 @@ const MISReportsLoan = () => {
       email: "john@example.com",
       city: "New York",
       state: "NY",
-      productName: "Product 1",
-      amount: "100.00",
-      gst: "03.00",
-      transactionId: "TX123456",
-      dateTime: "2024-07-13 12:00",
-      uniqueId: "UID123",
-      paymentType: "PhonePe",
-      userType: "Employee",
-      subscriptionType:"NA",
+      AccountNumber: "Product 1",
+      IFSCCode: "100.00",
+      Photos: "03.00",
+      BankStatement: "TX123456",
+      FatherName: "2024-07-13 12:00",
+      MotherName: "UID123",
+      ReferanceMoNoOne: "PhonePe",
+      ReferanceMoNoTwo: "Employee",
+      LoanType:"NA",
+      LoanAmount:"NA",
+      LoanId:"12547",
+      CreateDateTime:"1900-09-6",
+      Cibilscore:"2501",
+      Tenure:"NA",
+      IntrestRate:"5%",
+      ProcessingFee:"NA",
+      DisbursementAmount:"NA",
+      TransactionId:"NA",
+      Status:"checked",
     },
     // Add more entries as needed
   ];
@@ -34,15 +44,26 @@ const MISReportsLoan = () => {
           <th>Email</th>
           <th>City</th>
           <th>State</th>
-          <th>Digital Gold</th>
-          <th>Amount</th>
-          <th>GST</th>
-          <th>Transaction ID</th>
+          <th>AccountNumber</th>
+          <th>IFSCCode</th>
+          <th>Photos</th>
+          <th>Bank Statement</th>
+          <th>Father Name</th>
+          <th>Mother Name</th>
+          <th>Referance Mo No-1</th>
+          <th>Referance Mo No-2</th>
+          <th>Loan Type</th>
+          <th>Loan Amount</th>
+          <th>Loan Id</th>
+          <th>Create Date & Time</th>
+          <th>Cibil score</th>
+          <th>Tenure</th>
+          <th>Intrest Rate</th>
+          <th>Processing Fee</th>
+          <th>Disbursement Amount</th>
+          <th>Transaction Id</th>
           <th>Date & Time</th>
-          <th>Unique ID</th>
-          <th>Payment Type</th>
-          <th>User Type</th>
-          <th>Subscription Type</th>
+          <th>Status</th>
         </tr>
       </thead>
       <tbody>
@@ -55,15 +76,26 @@ const MISReportsLoan = () => {
             <td>{item.email}</td>
             <td>{item.city}</td>
             <td>{item.state}</td>
-            <td>{item.productName}</td>
-            <td>{item.amount}</td>
-            <td>{item.gst}</td>
-            <td>{item.transactionId}</td>
-            <td>{item.dateTime}</td>
-            <td>{item.uniqueId}</td>
-            <td>{item.paymentType}</td>
-            <td>{item.userType}</td>
-            <td>{item.subscriptionType}</td>
+            <td>{item.AccountNumber}</td>
+            <td>{item.IFSCCode}</td>
+            <td>{item.Photos}</td>
+            <td>{item.BankStatement}</td>
+            <td>{item.FatherName}</td>
+            <td>{item.MotherName}</td>
+            <td>{item.ReferanceMoNoOne}</td>
+            <td>{item.ReferanceMoNoTwo}</td>
+            <td>{item.LoanType}</td>
+            <td>{item.LoanAmount}</td>
+            <td>{item.LoanId}</td>
+            <td>{item.CreateDateTime}</td>
+            <td>{item.Cibilscore}</td>
+            <td>{item.Tenure}</td>
+            <td>{item.IntrestRate}</td>
+            <td>{item.ProcessingFee}</td>
+            <td>{item.DisbursementAmount}</td>
+            <td>{item.TransactionId}</td>
+            <td>{item.DateTime}</td>
+            <td>{item.Status}</td>
           </tr>
         ))}
       </tbody>
